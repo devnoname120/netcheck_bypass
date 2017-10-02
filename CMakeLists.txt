@@ -24,10 +24,14 @@ link_directories(
 
 add_executable(${SHORT_NAME}
   netcheck_bypass.c
+  #log.c
 )
 
 target_link_libraries(${SHORT_NAME}
   taihen_stub
+  # ScePaf_stub
+  # SceLibKernel_stub
+  # SceIofilemgr_stub 
 )
 
 set_target_properties(${SHORT_NAME}
